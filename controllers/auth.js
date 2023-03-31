@@ -40,6 +40,7 @@ const crearUsuario = async (req, res = response) => {
     console.log(error);
     res.status(500).json({
         ok: false,
+        error,
         msg: 'Porfavor hable con el admon'
     })
   }
@@ -83,6 +84,7 @@ const loginUsuario = async (req, res = response) => {
         console.log(error)
         res.status(500).json({
             ok: false,
+            error,
             msg: 'Porfavor hable con el admon'
         })
     }    
