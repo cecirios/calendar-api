@@ -84,7 +84,7 @@ const loginUsuario = async (req, res = response) => {
         console.log(error)
         res.status(500).json({
             ok: false,
-            error,
+            error : error.toString(),
             msg: 'Porfavor hable con el admon'
         })
     }    
